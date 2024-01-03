@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link rel="manifest" href="/manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script>
 </head>
 <body>
 
 <div id="top"><h1>Pomodoro Timer</h1></div>
 
-<div id="mid"><p id="timer">25:00</p></div>
+<div id="mid"><p id="timer">00:00</p></div>
 
 <div id="bottom">
     <button onclick="startPomodoro(25)">25 mins</button>
@@ -24,6 +36,7 @@
     <button id="stop" onclick="stopTimer()">Stop Timer</button>
 </div>
 <script src="main.js"></script>
+<script src="service-worker.js"></script>
 
 </body>
 </html>
