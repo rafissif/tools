@@ -1,0 +1,41 @@
+h1 {
+    color:cadetblue;
+}
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#timer {
+    font-size: 4em;
+    font-weight: bolder;
+}
+#stop {
+    background-color: coral;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+
+<div id="top"><h1>Pomodoro Timer</h1></div>
+
+<div id="mid"><p id="timer">25:00</p></div>
+
+<div id="bottom">
+    <button onclick="startPomodoro(25)">25 mins</button>
+    <button onclick="startPomodoro(50)">50 mins</button> <br>
+    <button onclick="startBreak(5)">Short Break</button>
+    <button onclick="startBreak(10)">Long Break</button> <br>
+
+    <input type="number" id="customTimer" min="1" step="1" placeholder="Custom Timer (mins)">
+    <button onclick="startCustomTimer()">Start</button> <br>
+    <button id="stop" onclick="stopTimer()">Stop Timer</button>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
