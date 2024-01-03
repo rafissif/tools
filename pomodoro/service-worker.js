@@ -1,7 +1,7 @@
 self.addEventListener('install', (event) => {
     event.waitUntil(
       caches.open('app-cache').then((cache) => {
-        return cache.addAll(['./app.html', './style.css', './main.js', './icon.png']);
+        return cache.addAll(['./app.html', './style.css', './main.js', './icon.png?=v3']);
       })
     );
   });
