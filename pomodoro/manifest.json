@@ -5,11 +5,11 @@
   "start_url": "./app.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#333",
   "icons": [
     {
-      "src": "./icon.png?=v2",
-      "sizes": "192x192",
+      "src": "./icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ]
