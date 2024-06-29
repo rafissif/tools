@@ -5,7 +5,7 @@ def get_criteria():
     """
     Get criteria and their weights from the user.
     """
-    criteria_input = st.text_input("Enter the objectives (main features you're looking for) separated by commas:")
+    criteria_input = st.text_input("Enter the criteria (main features you need) separated by commas:")
     criteria = criteria_input.split(',')
     criteria = [c.strip() for c in criteria]
     weights = []
